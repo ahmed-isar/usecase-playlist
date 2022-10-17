@@ -1,17 +1,107 @@
-\documentclass{beamer}
+\documentclass[8pt]{beamer}
     \usepackage{graphicx}
     \usepackage{wrapfig}
     \usepackage{multicol}
     
     \usetheme{CambridgeUS}
     
-    \title{Football} 
+    \title{Football part 1} 
     \author{Ahmed Ayman}
 
     \begin{document}
         \maketitle
         
         \begin{frame}[t]{Agenda}
+            \begin{enumerate}
+                \item The question
+                \item The accepted answer
+                \item Improve: compare best
+                \item Improve: Non parametric
+                \item The power of business understanding
+                \item Answers evaluation
+                \item Manger reaction
+            \end{enumerate}
         \end{frame}
 
+        \begin{frame}[t]{The question}
+            \centering
+            \includegraphics[width =.9\textwidth]{pics/question.png}
+        \end{frame}
+
+        \begin{frame}{The accepted answer}
+            \begin{columns}
+                \column{.5\textwidth}
+                \begin{itemize}
+                    \item compare Zamalek result with old years results
+                    \item compare Ahly result with old years results
+                \end{itemize}
+                \column{.5\textwidth}
+                \centering
+                \includegraphics[width =.35\textwidth]{pics/think.jpg}
+            \end{columns}\\[40px]
+            \pause
+            \includegraphics[width =.45\textwidth]{pics/better.jpg}
+            \pause
+            \includegraphics[width =.45\textwidth]{pics/worse.png}
+        \end{frame}
+
+        \begin{frame}[t]{compare best}
+            I get the data from the \href{https://ar.women.soccerway.com/national/egypt/premier-league/c206/archive/}{archive}\\
+            \begin{columns}
+                \begin{column}[t]{.3\textwidth}
+                    \centering
+                    \tiny\begin{tabular}{|c|c|c|c|}
+                        \hline
+                        season & p & play & \textbf{p}\%\\
+                        \hline
+                        \textcolor{green}{2022} & \textcolor{green}{77} & \textcolor{green}{34} & \textbf{\textcolor{green}{75\%}} &\\
+                        2021 & 80 & 34 & \textbf{78\%} &\\
+                        2020 & 89 & 34 & \textbf{87\%} &\\
+                        2019 & 80 & 34 & \textbf{78\%} &\\
+                        2018 & 88 & 34 & \textbf{86\%} &\\
+                        2017 & 84 & 34 & \textbf{82\%} &\\
+                        2016 & 76 & 34 & \textbf{76\%} &\\
+                        2015 & 87 & 38 & \textbf{76\%} &\\
+                        \textcolor{red}{2011} & \textcolor{red}{61} & \textcolor{red}{30} & \textbf{\textcolor{red}{68\%}} &\\
+                        2010 & 65 & 30 & \textbf{72\%} &\\
+                        2009 & 63 & 30 & \textbf{70\%} &\\
+                        2008 & 70 & 30 & \textbf{78\%} &\\
+                        2007 & 73 & 30 & \textbf{81\%} &\\
+                        2006 & 72 & 26 & \textbf{92\%} &\\
+                        2005 & 74 & 26 & \textbf{95\%} &
+                        \hline
+                    \end{tabular}
+                    \pause
+                \end{column}
+                \begin{column}{.7\textwidth}
+                    \begin{center}
+                        \begin{tabular}[1]{|c|c|}
+                            \hline
+                            count & 13\\
+                            min & 70\%\\
+                            mean & 81\%\\
+                            median & 84\%\\
+                            max & 95\%\\
+                            \hline
+                        \end{tabular}
+                        \\[5px]
+                        I'll split into 3 clusters\\
+                        \begin{tabular}{|c|c|}
+                            \hline
+                            Bad & (70 - 78.3)\\
+                            Acceptable & (78.3 - 86.6)\\
+                            Good & (86.6 - 94.9)\\
+                            \hline
+                        \end{tabular}
+                        \\[5px]
+                        \pause
+                        \includegraphics[width=\textwidth]{pics/dist.png}
+                    \end{center}
+                    \begin{itemize}
+                        \item Zamalek, not above expectation (under average)
+                        \item The main reason for wining, because Ahly was pathetic
+                    \end{itemize}
+                \end{column}
+            \end{columns}
+        \end{frame}
     \end{document}

@@ -88,9 +88,9 @@
                         I'll split into 3 clusters\\
                         \begin{tabular}{|c|c|}
                             \hline
-                            Bad & (70 - 78.3)\\
-                            Acceptable & (78.3 - 86.6)\\
-                            Good & (86.6 - 94.9)\\
+                            Good & (70 - 78.3)\\
+                            V.Good & (78.3 - 86.6)\\
+                            Amazing & (86.6 - 94.9)\\
                             \hline
                         \end{tabular}
                         \\[5px]
@@ -98,10 +98,109 @@
                         \includegraphics[width=\textwidth]{pics/dist.png}
                     \end{center}
                     \begin{itemize}
-                        \item Zamalek, not above expectation (under average)
+                        \item Zamalek, not above expectation
                         \item The main reason for wining, because Ahly was pathetic
                     \end{itemize}
                 \end{column}
             \end{columns}
+        \end{frame}
+
+        \begin{frame}{Improve: Non parametric}
+            Someone says "the data not normally distributed, We have to use ranking" \\
+            \begin{columns}
+                \begin{column}[t]{.4\textwidth}
+                    \centering
+                    \tiny\begin{tabular}{|c|c|c|c|c|c|}
+                        \hline
+                        season & p & play & p\% & rank & rank\%\\
+                        \hline
+                        \textcolor{green}{2022} & \textcolor{green}{77} & \textcolor{green}{34} & \textcolor{green}{75\%} & \textcolor{green}{4} & \textbf{\textcolor{green}{27\%}}&\\
+                        2021 & 80 & 34 & \textbf{78\%} & 9 & 60\%&\\
+                        2020 & 89 & 34 & \textbf{87\%} & 13 & 86\%&\\
+                        2019 & 80 & 34 & \textbf{78\%} & 8 & 53\%&\\
+                        2018 & 88 & 34 & \textbf{86\%} & 12 & 80\%&\\
+                        2017 & 84 & 34 & \textbf{82\%} & 11 & 73\%&\\
+                        2016 & 76 & 34 & \textbf{76\%} & 6 & 40\%&\\
+                        2015 & 87 & 38 & \textbf{76\%} & 5 & 33\%&\\
+                        \textcolor{red}{2011} & \textcolor{red}{61} & \textcolor{red}{30} & \textcolor{red}{68\%} & \textcolor{red}{1} & \textbf{\textcolor{red}{7\%}}&\\
+                        2010 & 65 & 30 & \textbf{72\%} & 3 & 20\%&\\
+                        2009 & 63 & 30 & \textbf{70\%} & 2 & 13\%&\\
+                        2008 & 70 & 30 & \textbf{78\%} & 7 & 47\%&\\
+                        2007 & 73 & 30 & \textbf{81\%} & 10 & 67\%&\\
+                        2006 & 72 & 26 & \textbf{92\%} & 14 & 93\%&\\
+                        2005 & 74 & 26 & \textbf{95\%} & 15 & 100\%&
+                        \hline
+                    \end{tabular}
+                \end{column}
+                \begin{column}{.6\textwidth}
+                    \begin{center}
+                        I'll split into 3 clusters\\
+                        \begin{tabular}{|c|c|}
+                            \hline
+                            Good & (0 - 33\%)\\
+                            V.Good & (34\% - 66\%)\\
+                            Amazing & (67\% - 99\%)\\
+                            \hline
+                        \end{tabular}
+                        \\[5px]
+                        \includegraphics[width=\textwidth]{pics/rank dist.png}
+                    \end{center}
+                    \begin{itemize}
+                        \item It leads to the same conclusion
+                    \end{itemize}
+                \end{column}
+            \end{columns}
+        \end{frame}
+
+        \begin{frame}{The power of business understanding}
+            Without business understanding, you will go in the wrong direction\\
+            \begin{columns}
+                \begin{column}[t]{.4\textwidth}
+                    \centering
+                    \tiny\begin{tabular}{|c|c|}
+                        \hline
+                        season & p & \\
+                        \hline
+                        \textcolor{green}{2022} & \textcolor{green}{77} &\\
+                        2021 & 80 &\\
+                        2020 & 89 &\\
+                        2019 & 80 &\\
+                        2018 & 88 &\\
+                        2017 & 84 &\\
+                        2016 & 76 &\\
+                        2015 & 87 &\\
+                        2011 & 61 &\\
+                        2010 & 65 &\\
+                        2009 & 63 &\\
+                        2008 & 70 &\\
+                        2007 & 73 &\\
+                        2006 & 72 &\\
+                        2005 & 74 &
+                        \hline
+                    \end{tabular}
+                \end{column}
+                \begin{column}{.6\textwidth}
+                    \centering
+                    \includegraphics[height=.7\textheight]{pics/wrong.jpg}
+                \end{column}
+            \end{columns}
+        \end{frame}
+
+        \begin{frame}[t]{Final thoughts}
+            \begin{block}{Answers evaluation}
+                \begin{itemize}
+                    \item Spend 1M for one question\pause
+                    \item Each answer should be based on statistical method\pause
+                \end{itemize}
+            \end{block}
+
+            \begin{block}{Manger reaction}
+                \includegraphics[height=.33\textheight]{pics/manger.jpg}\pause
+                \begin{itemize}
+                    \item My club is bad?\pause
+                    \item Why It's bad?\pause
+                    \item How could I fix It?
+                \end{itemize}
+            \end{block}
         \end{frame}
     \end{document}
